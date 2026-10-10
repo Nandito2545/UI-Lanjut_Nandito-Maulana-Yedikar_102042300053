@@ -55,38 +55,17 @@
 </template>
 
 <style scoped>
-.btn-back {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-bottom: var(--space-6);
-  color: var(--text-muted);
-  padding: 0;
-}
-.btn-back:hover { color: var(--primary); }
+.btn-back { background: none; border: none; font-size: 1rem; cursor: pointer;
+  margin-bottom: var(--space-6); color: var(--text-muted); }
 
-.detail-header {
-  background: var(--bg-light);
-  border-radius: var(--space-4);
-  border: 1px solid var(--border-color);
-  padding: var(--space-12) var(--space-8);
-  margin-bottom: var(--space-8);
-}
+.detail-header { background: var(--bg-light); border-radius: var(--space-4);
+  border: 1px solid var(--border-color); padding: var(--space-12) var(--space-8); margin-bottom: var(--space-8); }
 
-.event-tag {
-  display: inline-block;
-  background: rgba(102, 68, 255, 0.1);
-  color: var(--primary);
-  padding: var(--space-1) var(--space-4);
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  margin-bottom: var(--space-4);
-}
+.event-tag { display: inline-block; background: rgba(102, 68, 255, 0.1); color: var(--primary);
+  padding: var(--space-1) var(--space-4); border-radius: 50px; font-weight: 600; font-size: 0.9rem; margin-bottom: var(--space-4); }
 
 .detail-header h1 { font-size: 2.8rem; margin-bottom: var(--space-4); line-height: 1.2; }
-.meta-info { display: flex; gap: var(--space-6); flex-wrap: wrap; }
+.meta-info { display: flex; gap: var(--space-6); }
 .meta-item { color: var(--text-muted); font-weight: 500; font-size: 1.05rem; }
 
 /* ASYMMETRICAL GRID */
@@ -94,24 +73,14 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--space-12);
-  align-items: start; /* wajib agar sticky bekerja di dalam grid */
 }
 
 .agenda-list { list-style: none; padding: 0; margin: var(--space-8) 0; }
-.main-desc h2 {
-  margin-bottom: var(--space-4);
-  font-size: 1.8rem;
-  border-left: 4px solid var(--primary);
-  padding-left: var(--space-2);
-}
+
+.main-desc h2 { margin-bottom: var(--space-4); font-size: 1.8rem; border-left: 4px solid var(--primary); padding-left: var(--space-2); }
 .main-desc p { color: var(--text-muted); line-height: 1.8; margin-bottom: var(--space-6); font-size: 1.05rem; }
-.agenda-list li {
-  padding: var(--space-3) 0;
-  border-bottom: 1px solid var(--border-color);
-  color: var(--text-muted);
-  font-size: 1.05rem;
-}
-.agenda-list li strong { color: var(--text-main); display: inline-block; min-width: 90px; }
+
+.agenda-list li { padding: var(--space-3) 0; border-bottom: 1px solid var(--border-color); color: var(--text-muted); font-size: 1.05rem; }
 
 /* FOCAL POINT CARD */
 .ticket-card {
@@ -143,13 +112,12 @@
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
 }
+
 .btn-register:hover { background: var(--primary-hover); }
-.spots { margin-top: var(--space-4); color: #e63946; font-weight: 600; font-size: 0.95rem; margin-bottom: 0; }
+.spots { margin-top: var(--space-4); color: #e63946; font-weight: 600; font-size: 0.95rem; }
 
 @media (max-width: 900px) {
   .grid-asymmetric { grid-template-columns: 1fr; }
-  .detail-header h1 { font-size: 2rem; }
 }
 </style>

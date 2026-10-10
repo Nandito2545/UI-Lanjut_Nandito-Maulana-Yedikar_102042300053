@@ -34,10 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, p {
-  margin-top: 0;
-}
-
 /* GLOBAL GRID SYSTEM
    Menerapkan 12-kolom grid untuk tata letak yang konsisten */
 .grid-12 {

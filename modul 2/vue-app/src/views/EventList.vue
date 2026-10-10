@@ -4,7 +4,7 @@ const events = [
     id: 1,
     title: 'Vue.js Mastery Workshop',
     date: 'Oct 12, 2026',
-    loc: '📍 Tech Hub, Jakarta',
+    loc: 'Tech Hub, Jakarta',
     cat: 'Workshop',
     desc: 'Learn advanced Vue concepts, Composition API, and state management to build high-performance web applications interactively.',
   },
@@ -12,7 +12,7 @@ const events = [
     id: 2,
     title: 'National Tech Meetup',
     date: 'Oct 15, 2026',
-    loc: '📍 Main Auditorium, City Center',
+    loc: 'Main Auditorium, City Center',
     cat: 'Meetup',
     desc: 'A gathering of hundreds of developers and tech enthusiasts to share the latest industry trends and expand professional networks.',
   },
@@ -20,7 +20,7 @@ const events = [
     id: 3,
     title: 'Startup Pitch Competition',
     date: 'Nov 02, 2026',
-    loc: '📍 Innovation Center',
+    loc: 'Innovation Center',
     cat: 'Competition',
     desc: 'Watch the best local startup founders pitch their innovative ideas live in front of a panel of renowned investors.',
   },
@@ -28,7 +28,7 @@ const events = [
     id: 4,
     title: 'UI/UX Design Sprint',
     date: 'Nov 10, 2026',
-    loc: '📍 Creative Studio',
+    loc: 'Creative Studio',
     cat: 'Workshop',
     desc: 'A hands-on session on designing user interfaces by implementing layout systems and visual hierarchy principles.',
   },
@@ -36,7 +36,7 @@ const events = [
     id: 5,
     title: 'Digital Marketing Seminar',
     date: 'Nov 20, 2026',
-    loc: '📍 Grand Hotel Hall',
+    loc: 'Grand Hotel Hall',
     cat: 'Seminar',
     desc: 'An in-depth seminar dissecting modern digital marketing strategies, from SEO optimization to user conversion tactics.',
   },
@@ -44,7 +44,7 @@ const events = [
     id: 6,
     title: 'Community Leaders Summit',
     date: 'Dec 15, 2026',
-    loc: '📍 Gatherly HQ',
+    loc: 'Gatherly HQ',
     cat: 'Conference',
     desc: 'An exclusive year-end conference for community leaders to formulate sustainable ecosystem development strategies.',
   },
@@ -70,7 +70,7 @@ const events = [
           </div>
 
           <h3 class="event-title">{{ event.title }}</h3>
-          <p class="event-loc">{{ event.loc }}</p>
+          <p class="event-loc">📍 {{ event.loc }}</p>
           <p class="event-desc">
             {{ event.desc }}
           </p>
@@ -109,7 +109,7 @@ const events = [
 
 .event-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
 }
 
 /* PROXIMITY */
@@ -128,7 +128,7 @@ const events = [
   padding: var(--space-1) var(--space-2);
   border-radius: 6px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.85em;
 }
 
 .event-category { color: var(--text-muted); font-size: 0.85rem; font-weight: 500; text-transform: uppercase; }

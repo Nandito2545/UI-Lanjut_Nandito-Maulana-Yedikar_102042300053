@@ -74,7 +74,6 @@
   padding: var(--space-6);
   border-radius: var(--space-3);
   border: 1px solid var(--border-color);
-  overflow-x: auto;
 }
 
 .data-table-container h3 { margin-bottom: var(--space-4); font-size: 1.2rem; }

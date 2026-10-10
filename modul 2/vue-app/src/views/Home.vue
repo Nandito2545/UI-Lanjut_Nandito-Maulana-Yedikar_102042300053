@@ -91,7 +91,6 @@
   transition: transform 0.2s, background-color 0.2s;
   /* Make button pop to pass the Squint Test */
   box-shadow: 0 8px 20px rgba(102, 68, 255, 0.3);
-  display: inline-block;
 }
 
 .btn-primary:hover {
@@ -121,7 +120,6 @@
 }
 
 .features-grid {
-  /* GRID SYSTEM: Membagi fitur menjadi kolom rata sejajar */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-8);
@@ -155,12 +153,5 @@
 .feature-card p {
   color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 0;
-}
-
-@media (max-width: 640px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
 }
 </style>

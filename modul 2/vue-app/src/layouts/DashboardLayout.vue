@@ -51,7 +51,6 @@ import { RouterView, RouterLink } from 'vue-router'
 /* RAIL STYLES */
 .dashboard-rail {
   width: 260px;
-  flex-shrink: 0;
   background-color: #1c1948; /* Kontras gelap membedakan area nav dan konten */
   color: white;
   display: flex;
@@ -74,29 +73,24 @@ import { RouterView, RouterLink } from 'vue-router'
 }
 
 .rail-link {
-  display: block;
   padding: var(--space-3) var(--space-6);
   text-decoration: none;
   font-weight: 500;
   color: #a0a0b0;
-  border-left: 4px solid transparent;
   transition: background 0.2s, color 0.2s;
 }
 
-.rail-link:hover,
-.rail-link.active {
+.rail-link:hover, .rail-link.active {
   background-color: rgba(255, 255, 255, 0.05);
   color: white;
   border-left: 4px solid var(--primary);
 }
 
 .rail-footer { padding: var(--space-6); border-top: 1px solid rgba(255, 255, 255, 0.1); }
-.rail-footer .rail-link { padding-left: 0; padding-right: 0; border-left: none; }
 
 /* PANE STYLES */
 .dashboard-pane {
   flex: 1;
-  min-width: 0;
   display: flex;
   flex-direction: column;
   overflow-y: auto; /* Scroll khusus untuk area ini saja */
@@ -112,9 +106,7 @@ import { RouterView, RouterLink } from 'vue-router'
 }
 .pane-header h1 { font-size: 1.5rem; margin: 0; }
 
-.pane-content { padding: var(--space-8); }
-
-@media (max-width: 768px) {
-  .dashboard-rail { width: 200px; }
+.pane-content {
+  padding: var(--space-8);
 }
 </style>
